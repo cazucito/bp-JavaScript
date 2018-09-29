@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title>||bp|JavaScript|&gt;StringBuilder||</title>
+  <meta name="author:cazucito" content="cazucito">
+  <meta name="viewport" content="initial-scale=1.0,
+    width=device-width" />
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+  <script src="StringBuilder.js"></script>
+  <script src="../util/PagePrinter.js"></script>
+</head>
+
+<body>
+  <main>
+
+    <head>
+      <h1>StringBuilder</h1>
+    </head>
+    <section>
+      <article>
+        <h2>CÓDIGO</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </article>
+    </section>
+    <section>
+      <article class="test">
+        <h2>PRUEBAS</h2>
+        <code><pre>
+          let sb = new StringBuilder();
+          sb.append("Cadena1");
+          PagePrinter.println(sb.toString(), "outcome");
+          sb.append(" Cadena2").append(" Cadena3");
+          PagePrinter.println(sb.toString(), "outcome");
+          var miString = sb.toString();
+          PagePrinter.println(sb.toString(), "outcome");
+          sb.clear();
+          PagePrinter.println(sb.toString(), "outcome");
+          PagePrinter.println(miString, "outcome");
+        </pre></code>
+        <output id="outcome"></output>
+        <script>
+          let sb = new StringBuilder();
+          sb.append("Cadena1");
+          PagePrinter.println(sb.toString(), "outcome");
+          sb.append(" Cadena2").append(" Cadena3");
+          PagePrinter.println(sb.toString(), "outcome");
+          var miString = sb.toString();
+          PagePrinter.println(sb.toString(), "outcome");
+          sb.clear();
+          PagePrinter.println(sb.toString(), "outcome");
+          PagePrinter.println(miString, "outcome");
+        </script>
+      </article>
+    </section>
+  </main>
+
+</body>
+
+</html>
